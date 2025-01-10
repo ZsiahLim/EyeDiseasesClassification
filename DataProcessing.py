@@ -5,8 +5,8 @@ import shutil
 
 # Paths
 data_path = "/Users/henrilix/PycharmProjects/EyeDiseaseDetection/ODIR-5K/full_df.csv"
-image_root_dir = "/Users/henrilix/PycharmProjects/EyeDiseaseDetection/ODIR-5K"         # Root directory of the images
-output_dir = "/Users/henrilix/PycharmProjects/EyeDiseaseDetection/processed_ODIR"      # Directory to store processed dataset
+image_root_dir = "/Users/henrilix/PycharmProjects/EyeDiseaseDetection/ODIR-5K"
+output_dir = "/Users/henrilix/PycharmProjects/EyeDiseaseDetection/processed_ODIR"
 
 # Load the dataset labels
 data = pd.read_csv(data_path)
