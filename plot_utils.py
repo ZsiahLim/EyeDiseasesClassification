@@ -8,7 +8,7 @@ class ModelPerformancePlotter:
 
         :param history: Dictionary or history object containing training and validation metrics for the trained model.
                         Expected keys: 'train_accuracy', 'val_accuracy', 'train_loss', 'val_loss'
-        :param baseline_history: Dictionary or history object containing metrics for the baseline model (optional).
+        :param baseline_history: Dictionary or history object containing metrics for the baseline model.
         """
         self.history = history
         self.baseline_history = baseline_history
@@ -16,7 +16,7 @@ class ModelPerformancePlotter:
     def plot_accuracy(self):
         """
         Plot accuracy over epochs for training and validation.
-        If baseline history is provided, compare with the baseline model.
+        Compare with the baseline model.
         """
         epochs = range(1, len(self.history['train_accuracy']) + 1)
 
@@ -38,7 +38,7 @@ class ModelPerformancePlotter:
     def plot_loss(self):
         """
         Plot loss over epochs for training and validation.
-        If baseline history is provided, compare with the baseline model.
+        Compare with the baseline model.
         """
         epochs = range(1, len(self.history['train_loss']) + 1)
 
